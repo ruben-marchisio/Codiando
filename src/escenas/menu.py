@@ -19,8 +19,8 @@ class Menu(arcade.View):
         arcade.set_background_color(COLOR_FONDO)
 
         # Inicializar UI
-        self.ui = UIManager(enable=True)
-        self.ui.purge_ui_elements()
+        self.ui = UIManager()
+        self.ui.enable()
 
         self.anchor = UIAnchorLayout()
         self.ui.add(self.anchor)
@@ -84,6 +84,8 @@ class Menu(arcade.View):
 
         # Footer
         arcade.draw_text('Codiando — v0.1', 16, 12, (220, 230, 230), 12)
+        if self.ui:
+            self.ui.draw()
 
     # Callbacks
     def _on_nueva_partida(self, _event) -> None:
