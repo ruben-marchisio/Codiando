@@ -39,15 +39,6 @@ class Menu(arcade.View):
                 text=texto,
                 width=BTN_W,
                 height=BTN_H,
-                style={
-                    'font_size': 18,
-                    'font_name': 'Arial',
-                    'bg_color': (96, 125, 139),          # normal
-                    'bg_color_pressed': (69, 90, 100),   # click
-                    'bg_color_hover': (120, 144, 156),   # hover
-                    'border_width': 0,
-                    'font_color': arcade.color.WHITE,
-                },
             )
             btn.on_click = on_click
             return btn

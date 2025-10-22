@@ -1,0 +1,50 @@
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Cachés de Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Archivos temporales
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Archivos de compilación / empaquetado
+build/
+dist/
+*.egg-info/
+
+# Configuraciones del sistema o IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Recursos generados temporalmente
+*.png~
+*.jpg~
+*.gif~
+*.mp4~
+*.wav~
+*.ogg~
+
+# Archivos del proyecto Arcade / PyInstaller
+*.spec
+output/
+cache/
+logs/
+
+# Archivos de Codex o ejecución local
+.codex/
+*.codex
+.codex_cache/
+.codex_session/
